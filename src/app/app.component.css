@@ -1,0 +1,114 @@
+/* Style the calculator container */
+.myclac {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #df0909;
+  border-radius: 10px;
+  width: 350px;
+  /* Set a fixed width for the calculator */
+  height: 520px;
+  /* Set a fixed height for the calculator to make it square */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the input field */
+.myclac input {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 22px;
+
+}
+
+/* Style the button containers */
+.all-btn-numbers,
+.all-btn-signs,
+btn-clear-equals {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  flex-grow: 1;
+  /* Make button containers expand to fill the remaining space */
+  justify-items: center;
+}
+
+/* Style the buttons */
+.myclac button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  margin: 5px;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+.myclac button:hover {
+  background-color: #45a049;
+}
+
+/* Style the extra buttons */
+.btn-extra button {
+  width: 100px;
+}
+
+/* Style the clear (C) button */
+.btn-clear-equals button:first-child {
+  background-color: #ff4a4a;
+  font-size: larger;
+  width: 150px;
+}
+
+/* Style the equals (=) button */
+.btn-clear-equals button:last-child {
+  background-color: #f0a80a;
+  font-size: larger;
+  width: 150px;
+}
+
+
+/* Apply additional styles as needed for your calculator */
+
+.all-btn-numbers button:hover,
+.all-btn-signs button:hover,
+.btn-clear-equals button:hover,
+.all-btn-signs button:hover,
+.btn-extra button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgb(190, 190, 60);
+}
+
+input {
+  width: 80%;
+  margin: 10px 0px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(75, 75, 75);
+}
+
+.all-btn-numbers button {
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+/* Style the button containers */
+.all-btn-numbers {
+  display: grid;
+  /* Use CSS Grid for column layout */
+  grid-template-columns: repeat(5, 1fr);
+  /* Create 5 equally spaced columns */
+  gap: 10px;
+  /* Add spacing between the buttons */
+  margin: 10px 0;
+}
+
+/* Style the buttons */
