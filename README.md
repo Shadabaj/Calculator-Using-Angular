@@ -1,27 +1,44 @@
-# Calculator
+# Angular Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+A small Angular calculator demo with a button-based interface and keyboard entry for basic arithmetic expressions.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Enter digits and arithmetic operators using the on-screen keypad.
+- Calculate addition, subtraction, multiplication, and division.
+- Submit an expression with the Enter key.
+- Clear the current expression or remove the last character.
+- Build with Angular CLI.
 
-## Code scaffolding
+## Technology stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 16
+- TypeScript
+- Angular Forms
+- Jasmine and Karma test tooling
 
-## Build
+## Run locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Prerequisites: Node.js and npm compatible with the project's Angular CLI version.
 
-## Running unit tests
+~~~bash
+npm ci
+npm start
+~~~
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open `http://localhost:4200/`.
 
-## Running end-to-end tests
+## Build and test
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+~~~bash
+npm run build
+npm test
+~~~
 
-## Further help
+## Implementation note
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This is a learning project, not a production calculator. The current component evaluates input with JavaScript `eval()`; replace it with a safe expression parser and add input/error handling before accepting untrusted expressions or using the application in production.
+
+## License
+
+No license file is currently included. Add an explicit license before inviting others to reuse or redistribute this project.
